@@ -12,6 +12,7 @@
 		D40BB93B2C65575400765FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40BB93A2C65575400765FD5 /* Assets.xcassets */; };
 		D40BB93E2C65575400765FD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40BB93D2C65575400765FD5 /* Preview Assets.xcassets */; };
 		D46B99112C67912B000E8CEB /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46B99102C67912B000E8CEB /* ToDoItem.swift */; };
+		D46B99162C67C7D0000E8CEB /* PreviewModelContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46B99152C67C7D0000E8CEB /* PreviewModelContainerProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D40BB93A2C65575400765FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40BB93D2C65575400765FD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D46B99102C67912B000E8CEB /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		D46B99152C67C7D0000E8CEB /* PreviewModelContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModelContainerProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		D40BB93C2C65575400765FD5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				D46B99142C67C7BF000E8CEB /* Data */,
 				D40BB93D2C65575400765FD5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -84,6 +87,14 @@
 				D46B99102C67912B000E8CEB /* ToDoItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D46B99142C67C7BF000E8CEB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D46B99152C67C7D0000E8CEB /* PreviewModelContainerProvider.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 				D40BB9392C65575300765FD5 /* ContentView.swift in Sources */,
 				D40BB9372C65575300765FD5 /* LookAtMyDataApp.swift in Sources */,
 				D46B99112C67912B000E8CEB /* ToDoItem.swift in Sources */,
+				D46B99162C67C7D0000E8CEB /* PreviewModelContainerProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
