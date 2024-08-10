@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Buy groceries",
+        "done": false
+    },
+    {
+        "name": "Walk the dog",
+        "done": true
+    },
+    {
+        "name": "Read a book",
+        "done": false
+    },
+    {
+        "name": "Complete homework",
+        "done": true
+    },
+    {
+        "name": "Call mom",
+        "done": false
+    },
+    {
+        "name": "Pay bills",
+        "done": true
+    },
+    {
+        "name": "Schedule dentist appointment",
+        "done": false
+    },
+    {
+        "name": "Clean the house",
+        "done": true
+    },
+    {
+        "name": "Exercise",
+        "done": false
+    },
+    {
+        "name": "Prepare dinner",
+        "done": true
+    }
+]
