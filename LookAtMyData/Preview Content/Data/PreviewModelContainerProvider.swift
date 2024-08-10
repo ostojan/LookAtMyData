@@ -12,7 +12,19 @@ import UIKit
 final class PreviewModelContainerProvider {
     static let shared = PreviewModelContainerProvider()
 
+    private let toDoItems: [ToDoItem]
     let modelContainer: ModelContainer
+
+    var modelContext: ModelContext {
+        modelContainer.mainContext
+    }
+
+    var toDoItem: ToDoItem {
+        guard let item = toDoItems.first else {
+            fatalError("There is no data loaded")
+        }
+        return item
+    }
 
     private init() {
         let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
@@ -27,9 +39,9 @@ final class PreviewModelContainerProvider {
         }
 
         do {
-            let toDoItems = try JSONDecoder().decode([ToDoItem].self, from: previewData)
+            toDoItems = try JSONDecoder().decode([ToDoItem].self, from: previewData)
             for toDoItem in toDoItems {
-                modelContainer.mainContext.insert(toDoItem)
+                modelContext.insert(toDoItem)
             }
         } catch {
             fatalError("Could not decode preview data")

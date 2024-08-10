@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(toDoItems) { toDoItem in
-                Label(toDoItem.name, systemImage: toDoItem.done ? "checkmark.circle" : "circle")
+                ToDoItemRow(for: toDoItem)
             }
         }
     }
